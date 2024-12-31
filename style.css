@@ -1,0 +1,472 @@
+/* @font-face {
+    font-family: ;
+    src: url();
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+/* #main{
+    height: 100%;  IT WAS THE MISTAKE WHICH WAS APPEARING AS A HINDARENCE IN SSMMOTH SCHROLLING
+    width: 100%;
+} */
+
+#page1{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 0 2vw 0 2vw;
+    
+}
+
+nav{
+    padding: 2vw 0vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    
+}
+
+#nav-part2{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+#nav-part2 h4{
+    padding: 10px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.74);
+    border-radius: 50px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.854);
+    font-size: 18px;
+    position: relative;
+    transition: all ease 0.4s;
+    overflow: hidden;
+}
+
+#nav-part2 h4::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+}
+
+#nav-part2 h4:hover::after{
+    bottom: 0;
+    border-radius: 0;
+}
+
+#nav-part2 h4 a{
+    color: rgba(0, 0, 0, 0.776);
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+}
+
+#nav-part2 h4:hover a{
+    color: azure;
+}
+
+#center{
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding: 0px 10px 40px 10px;
+}
+
+#left h3{
+    width: 30vw;
+    font-size: 2vw;
+}
+
+#center h1{
+    font-size: 10vw;
+    line-height: 8vw;
+    text-align: right;
+}
+
+#page1 video{
+    width: 100%;
+    border-radius: 30px;
+    margin-top: 4vw;
+    position: relative;
+}
+
+#hero-shape1{
+    height: 36vw;
+    width: 46vw;
+    position: absolute;
+    right: 0;
+    top: 75vh;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background-color: orangered;
+    filter: blur(20px);
+
+}
+
+#hero-1{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: orangered;
+    border-radius: 50%;
+    animation: alternate;
+    animation-name: anime;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    filter: blur(20px);
+    animation-timing-function: linear;
+
+}
+
+#hero-2{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: orangered;
+    border-radius: 50%;
+    animation: alternate;
+    animation-name: anime;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    filter: blur(20px);
+    animation-timing-function: linear;
+}
+
+#hero-3{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: orangered;
+    border-radius: 50%;
+    animation: alternate;
+    animation-name: anime;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    filter: blur(20px);
+    animation-timing-function: linear;
+}
+
+@keyframes anime{
+    from{
+        transform: translate(-50%,20%);
+    }
+    to{
+        transform: translate(20%,-10%);
+    }
+}
+
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 8vw 0;
+    
+}
+
+#moving-text{
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+#moving-text::-webkit-scrollbar{
+    display: none;
+}
+
+.container{
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: move;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+#moving-text h1{
+    /* min-height: 50%; */
+    font-size: 9vw;
+    /* background-color: lightblue; */
+    display: inline-block;
+}
+
+#circle{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: orangered;
+    display: inline-block;
+    margin: 1vw 3vw;
+
+}
+
+@keyframes move{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+#page2-bottom{
+    position: absolute;
+    height: 110vh;
+    width: 100%;
+    /* background-color: #efeae3; */
+    margin: 9vw 0 0 0;
+    padding: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+#page2-bottom h1{
+    font-size: 4.5vw;
+    width: 65%;
+    font-weight: 1000;
+    margin: 0 0 20vw 0;
+    line-height: 3.8vw;
+}
+
+#bottom-part2{
+    width: 22%;
+    margin: 4vw  2.5vw 0 0;
+}
+
+#bottom-part2 img{
+    width: 100%;
+    border-radius: 7%;
+    margin: 0 0 30px 0;
+}
+
+#bottom-gola{
+    height: 400px;
+    width: 370px;
+    background: linear-gradient(to top right,#FE330A,#fe5f0a);
+    filter: blur(20px);
+    border-radius: 50%;
+    position: absolute;
+    animation-name: bottomCircle;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+#page2 #bottom-gola{
+    margin-top: 25vw;
+    margin-left: 25vw;
+    z-index: -1;
+}
+
+@keyframes bottomCircle{
+    from{
+        transform: translate(7%, -7%);
+    }
+    to{
+        transform: translate(-7%, 7%);
+    }
+}
+
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    margin-top: 32vw;
+    /* background-color: bisque; */
+    
+}
+
+.elem{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    /* border-top: 1px solid black; */
+    border-bottom: 1px solid rgb(145, 143, 143);
+    position: relative;
+    overflow: hidden;
+}
+
+.elem h2{
+    padding: 3vw;
+    font-size: 3vw;
+}
+
+.elem .overlay{
+    height: 100%;
+    width: 100%;
+    background-color: #fe5f0a;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: all ease 0.3s;
+}
+
+.elem:hover .overlay{
+    top: 0;
+    z-index: -1;
+}
+
+#fixed-image{
+    height: 30vw;
+    width: 25vw;
+    background-color: #fe5f0a;
+    position: fixed;
+    left: 51%;
+    top: 20%;
+    z-index: 99;
+    border-radius: 13px;
+    display: none;
+    background-size: cover;
+    background-position: center;
+}
+
+#page4{
+    height: 80vh;
+    width: 100%;
+    background-color: rgb(254, 251, 245);
+    padding: 10vw 2vw;
+}
+
+.swiper {
+    width: 100%;
+    height: 80%;
+  }
+
+  .swiper-slide {
+    /* text-align: center; */
+    /* font-size: 18px; */
+    /* background: #fff; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 30%;
+    border-left: 1px solid gray;
+  }
+
+  /* .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } */
+
+  .swiper-slide {
+    width: 30%;
+  }
+
+  /* .swiper-slide:nth-child(2n) {
+    width: 40%;
+  }
+
+  .swiper-slide:nth-child(3n) {
+    width: 20%;
+  } */
+
+  @media (max-width:300px){
+    /* #page1{
+        background-color: #FE330A;
+    } */
+
+    #page1{
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+        padding: 0 2vw 0 2vw;
+        
+    }
+    
+    nav{
+        padding: 2vw 0vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        position: relative;
+        
+    }
+    
+    #nav-part2{
+        display: flex;
+        align-items: center;
+        gap: 1vw;
+    }
+    
+    #nav-part2 h4{
+        padding: 10px 20px;
+        border: 1px solid rgba(0, 0, 0, 0.74);
+        border-radius: 50px;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.854);
+        font-size: 18px;
+        position: relative;
+        transition: all ease 0.4s;
+        overflow: hidden;
+    }
+    
+    #nav-part2 h4::after{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        left: 0;
+        bottom: -100%;
+        border-radius: 50%;
+        transition: all ease 0.4s;
+    }
+    
+    #nav-part2 h4:hover::after{
+        bottom: 0;
+        border-radius: 0;
+    }
+    
+    #nav-part2 h4 a{
+        color: rgba(0, 0, 0, 0.776);
+        text-decoration: none;
+        position: relative;
+        z-index: 9;
+    }
+    
+    #nav-part2 h4:hover a{
+        color: azure;
+    }
+    
+  }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
